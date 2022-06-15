@@ -1,3 +1,132 @@
-*{
+* {
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    padding: 1rem;
+}
+
+.graphic {
+    background-color: white;
+    background-image: url(../assets/graphic.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    // background-attachment: fixed;
+    // background-position: 50vw 10vw;
+    background-position: left 50vw bottom 0%;
+    // background-position-y: 50px;
+}
+
+.text {
+    width: 60vw;
+
+    h4 {
+        text-transform: uppercase;
+        color: #ff3998;
+    }
+
+    button {
+        border: none;
+        padding: 0.6rem 1rem;
+        border-radius: 30px;
+        background-color: white;
+        border-top: #ff6d42 solid 2px;
+        border-right: #cea459 solid 2px;
+        border-bottom: #ff8039 solid 2px;
+        border-left: #ff4b79 solid 2px;
+        margin: 0 0 2rem 0;
+
+    }
+}
+
+.bg {
+    background-image: url(../assets/background.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right -100px;
+    flex-direction: column;
+
+
+    h1 {
+        margin: 3rem 0 0;
+    }
+}
+
+.companies {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    // border:  solid 1px red;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // border:  solid 1px red;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    // border:  solid 1px black;
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    // text-decoration: none;
+    color: #555555;
+}
+
+.showcase {
+    flex-direction: column;
+
+    .text {
+        p {
+            color: #555555;
+        }
+    }
+
+    .item-list {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+
+        .item {
+            display: inline;
+
+            img {
+                // width: 70vw;
+                height: 300px;
+                width: auto
+            }
+
+            .info {
+                background-color: #eeeeee;
+                height: 100px;
+                margin-top: -3px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+    }
 }
